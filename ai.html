@@ -9,17 +9,16 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #fff7fb, #f4f7ff);
-      color: #2d2d2d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #fff7fb, #f4f7ff);
+  color: #2d2d2d;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
 
     .game-container {
       width: 100%;
@@ -250,10 +249,45 @@
         padding: 20px;
       }
     }
+
+
+header {
+  margin-bottom: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0;
+  border-radius: .5em;
+  overflow: hidden;
+  width: fit-content;
+}
+
+nav a {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: gray;
+  color: black;
+}
   </style>
 </head>
 <body>
-  <div class="game-container">
+  <div class="page-container">
+    <header>
+      <nav class="common">
+        <a href="index.html">Resume</a>
+        <a href="fromscratch.html">Barbie Movies</a>
+      </nav>
+    </header>
+    </div>
+    <div class="game-container">
     <h1>Color Mixing Challenge</h1>
     <p class="subtitle">Type the color created when these two colors mix.</p>
 

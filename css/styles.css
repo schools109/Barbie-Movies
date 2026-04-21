@@ -10808,3 +10808,26 @@ a:hover {
 background-color: rgb(48, 50, 52);
 color: white;
 }
+
+.top-nav {
+  position:absolute;   /* sticks it to the screen */
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;     /* keeps it above everything */
+}
+
+.top-nav a {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+.top-nav a:hover {
+  background-color: gray;
+  color: black;
+}
